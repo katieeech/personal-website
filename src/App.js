@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Navbar from './Component/Navbar'
+import Home from './Component/Home'
+import Intro from './Component/Intro'
+import About from './Component/About'
+import Work from './Component/Work'
+import Studio from './Component/Studio';
+import { BrowserRouter as Router, Route } from "react-router-dom"
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router basename={process.env.PUBLIC_URL}>
+      <Navbar />
+      <Route exact path="/" render={(routerProps) => <Home {...routerProps} />} />
+      <Route exact path="/intro" render={(routerProps) => <Intro {...routerProps} />} />
+      <Route exact path="/about" render={(routerProps) => <About {...routerProps} />} />
+      <Route exact path="/work" render={(routerProps) => <Work {...routerProps} />} />
+      <Route exact path="/studio" render={(routerProps) => <Studio {...routerProps} />} />
+
+    </Router>
   );
 }
 
