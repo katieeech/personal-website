@@ -10,6 +10,7 @@ import List from '@mui/material/List';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
+import Button from '@mui/material/Button';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
@@ -19,7 +20,6 @@ import ListItemText from '@mui/material/ListItemText';
 // import InboxIcon from '@mui/icons-material/MoveToInbox';
 // import MailIcon from '@mui/icons-material/Mail';
 // import { MuiThemeProvider, createTheme } from '@material-ui/core/styles';
-
 
 
 
@@ -99,7 +99,7 @@ export default function PersistentDrawerLeft() {
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
             <AppBar position="fixed" open={open} style={{ background: 'white' }} elevation={0}>
-                <Toolbar style={{ color: 'white' }}>
+                <Toolbar style={{ color: 'purple', padding: '0.7em 1.3em 1.3em' }}>
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
@@ -109,10 +109,40 @@ export default function PersistentDrawerLeft() {
                     >
                         <MenuIcon />
                     </IconButton>
+
                     <Typography variant="h6" noWrap component="div">
                         {/* Persistent drawer */}
                     </Typography>
+                    <div className="box-navbar">
+                        <Button variant="outlined" color="inherit" style={{ margin: '0 0.3em', fontWeight: 'bold' }}
+                            onClick={() => window.open('https://www.linkedin.com/in/katiehchoi/')}>
+                            email
+                        </Button>
+                        <Button variant="outlined" color="inherit" style={{ margin: '0 0.3em', fontWeight: 'bold' }} onClick={() => window.open('https://github.com/katiehyewonchoi')}>
+                            github
+                        </Button>
+                        <Button variant="outlined" color="inherit" style={{ margin: '0 0.3em', fontWeight: 'bold' }}
+                            onClick={() => window.open('https://www.linkedin.com/in/katiehchoi/')}>
+
+                            linkedin
+                        </Button>
+                        {/* <IconButton variant="outlined" color="inherit" >
+                            email
+                        </IconButton>
+                        <IconButton variant="outlined" color="inherit" >
+                            github
+                        </IconButton>
+                        <IconButton variant="outlined" color="inherit" >
+                            linkedin
+                        </IconButton> */}
+                    </div>
+                    {/* i added above */}
+                    <div className="toolbar-bottom"></div>
+
                 </Toolbar>
+                {/* i add below */}
+
+
             </AppBar>
             <Drawer
                 sx={{

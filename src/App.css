@@ -1,21 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&family=Noto+Sans+KR:wght@300;400;500&display=swap');
 * {
+  /* font-family: 'Noto Sans KR', sans-serif; */
   font-family: 'Montserrat', sans-serif;
+  font-weight:500;
 }
+  /* background: rgba(200,100,100, 0.5); */
 
 /* Navbar */
 /* toolbar*/
-.css-1t29gy6-MuiToolbar-root{
-  content: '';
+/* .css-1t29gy6-MuiToolbar-root{ */
+.MuiToolbar-root{
+content: '';
 position: absolute;
 top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-image: url("./Images/myplaylists-bg.jpeg");
+/* background-image: url("./Images/myplaylists-bg.jpeg"); */
+background-image: url("./Images/ToolbarBG11.jpg");
+background-size: cover;
+background-position:bottom;
 /* background: rgba(200,100,100, 0.45); */
 /* background: rgba(81, 139, 173, 0.349); */
+}
+
+.navbar-ul{
+  list-style: none;
+}
+
+.navbar-li{
+  color: white;
+}
+
+/* .box-navbar{ */
+  .box-navbar{
+  /* border:red 1px solid; */
+margin-left:auto;
+}
+
+
+
+
+.css-ikb3mf-MuiButtonBase-root-MuiButton-root{
+  margin:0 0.5em;
 }
 
 .css-10hburv-MuiTypography-root  {
@@ -29,19 +56,57 @@ h1{
 }
 h3 {
   font-weight: 500;
-  
 }
 
 /* Intro */
+/* .intro-outer-container{
+  background-image:url("./Images/IntroBG.jpg");
+} */
+
 .intro-div {
+  /* border: green 2px solid; */
   /* margin: 1rem; */
   /* padding: 0 3.5em; */
-  padding-left: 3.5em;
+  padding-top: 2.5em;
+  padding-left: 6em;
+  display:inline-block;
+  margin-bottom:0.5em;
+  /* background:	rgba(248,24,148, 0.7); */
 }
 
+
+.intro-div > h1,
+.intro-div > h2 {
+  line-height: 2.2em;
+}
+.intro-div > h3{
+  margin-bottom:0;
+}
+
+.fed {
+  color:#FF0095;
+}
+.intro-div:hover {
+color:#FF0095 ;
+}
+
+.intro-div:hover .fed{
+  /* background-color:rgb(0, 65, 243); */
+  padding:0.3em;
+  font-style: italic;
+  font-weight:600;
+  background-color:#FF0095 ;
+  color:white;
+}
+
+.intro-div:hover .from-right{
+  background:#fabce0 ;
+  }
+
+/* 
 .intro-div > h3 {
   margin-bottom: 2.5em;
-}
+} */
 
 
 
@@ -60,22 +125,6 @@ background: rgba(200,100,100, 0.5); */
   font-family: 'Montserrat', sans-serif;
 } */
 
-/* h2{
-  color:blue;
-} */
-
-/* INTRO */
-/* .intro-div > h1:hover:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(200,100,100, 0.5);
-  } */
-
-
 
 .home-container{
   /* display:flex; */
@@ -93,11 +142,74 @@ background: rgba(200,100,100, 0.5); */
 }
 
 .project-demo-thumbnail-container{
-  display:flex;
-  flex-wrap: wrap;
+  /* border: red solid 1px; */
+  margin: 4em 0;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   justify-content: center;
   /* max-width: 1px;
   max-height: 2px; */
+  text-align: center;
+  padding-left:6em;
+}
+
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+
+/* .project-demo-thumbnail-container > h2 { */
+.from-right{
+    /* border: blue solid 1px; */
+  /* font-family: sans-serif; */
+  z-index:1;
+  display: block;
+  text-align: left;
+  font-size: 1.2em;
+  line-height: 1em;
+  min-height:0.7em;
+  max-width:inherit;
+  /* color:white; */
+  background: linear-gradient(to right, #FF0095  0%, white 100%);
+  /* background: #FF0095; */
+background-size: 200% 100%;
+background-position:left bottom;
+animation: 3s ease-out 0s 1 slideInFromRight;
+margin-bottom:2em;
+border-radius:0.3em;
+}
+
+
+/* .intro-div > .from-top{
+  height: 100vh;
+  position:absolute;
+  left: 30%;
+background: linear-gradient(to bottom, rgb(255, 53, 171) 0%, #FF0095 100%);
+background-size: 200% 100%;
+animation: 2s ease-in 1s 1 slideInFromTop;
+} */
+
+
+
+.proj-demo-link > h3 {
+text-align:left;
+margin-top: 2em ;
+/* margin-right:4em; */
 }
 
 .project-demo-thumbnail{
@@ -105,38 +217,27 @@ background: rgba(200,100,100, 0.5); */
   height:230px;
 }
 
-/* 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+figure {
+  margin-top: 2em ;
+  display:inline-block;
+  padding:1em;
+    /* border:2px solid #00FFEA; */
+  /* border-radius: 1em; */
+  /* padding: 1.5em; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+figure:hover .text{
+opacity:0.3;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.text {
+  background-color: rgba(254, 107, 118, 0.5);
   color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
 
-.App-link {
-  color: #61dafb;
+figcaption{
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

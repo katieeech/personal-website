@@ -5,6 +5,7 @@ function Studio() {
     return (
         <div>
             STUDIO
+            -Maintenance Page
             <Footer />
         </div>
     )
