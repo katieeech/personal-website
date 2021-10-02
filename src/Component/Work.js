@@ -8,8 +8,12 @@ function Work() {
         <div>
             <div className="project-thumbnail-container">
                 ODBD
+                <p> Music/Podcast streaming app for programmers</p>
+
                 <img src={ODBD} alt="odbd" className="project-thumbnail" />
                 Transparent Atelier
+                <p> Retail app for eyewears</p>
+
                 <img src={TA} alt="transparent atelier" className="project-thumbnail" />
                 HummingEffect
                 <img src={ODBD} alt="odbd" className="project-thumbnail" />

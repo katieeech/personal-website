@@ -8,7 +8,6 @@ function Intro() {
     return (
         <div className="intro-outer-container">
             <div className="intro-div">
-                {/* <p className="from-top">top</p> */}
                 <h1>WELCOME!</h1>
                 <h2>
                     I am a <span className="fed">front-end developer</span> based in New York City
@@ -16,32 +15,38 @@ function Intro() {
                 <h3> I build and design visually compelling and user-friendly interfaces</h3>
             </div>
 
-            <div className="project-demo-thumbnail-container">
+            <div className="from-right"></div>
+            <h3>/Explore My Work</h3>
 
-                {/* <Link to="/work" style={{ textDecoration: 'none', color: '#000' }} > */}
-                <div className="from-right"></div>
-                <Link to="/work" style={{ textDecoration: 'none', color: '#000' }} className="proj-demo-link">
-                    <h3>/Explore My Work</h3>
-                    <figure>
-                        <img src={ODBD} alt="odbd" className="project-demo-thumbnail" />
-                        <figcaption> ODBD
-                            <br></br>
-                            Music/Podcast streaming app for programmers
-                        </figcaption>
-                    </figure>
-                </Link>
+            <div className="proj-demos-container">
 
-                <Link to="/work" style={{ textDecoration: 'none', color: '#000' }} className="proj-demo-link">
+                <div className="proj-demo-thumb-container">
+                    <Link to="/work" style={{ textDecoration: 'none', color: '#000' }} className="proj-demo-link">
+                        <img src={ODBD} alt="odbd" className="proj-demo-img" />
+                        <div className="proj-thumb-middle">
+                            <div className="proj-thumb-title">ODBD</div>
+                        </div>
+                    </Link>
+                </div>
 
-                    {/* Transparent Atelier */}
-                    <figure>
-                        <img src={TA} alt="transparent atelier" className="project-demo-thumbnail" />
-                        <figcaption> Transparent Atelier
-                            <br></br>
-                            Retail app for eyewears
-                        </figcaption>
-                    </figure>
-                </Link>
+                <div className="proj-demo-thumb-container">
+                    <Link to="/work" style={{ textDecoration: 'none', color: '#000' }} className="proj-demo-link">
+                        <img src={TA} alt="transparent atelier" className="proj-demo-img" />
+                        <div className="proj-thumb-middle">
+                            <div className="proj-thumb-title">Transparent Atelier</div>
+                        </div>
+                    </Link>
+
+                </div>
+
+                <div className="proj-demo-thumb-container">
+                    <Link to="/work" style={{ textDecoration: 'none', color: '#000' }} className="proj-demo-link">
+                        <img src={ODBD} alt="odbd" className="proj-demo-img" />
+                        <div className="proj-thumb-middle">
+                            <div className="proj-thumb-title">Humming Effect</div>
+                        </div>
+                    </Link>
+                </div>
                 {/* 
                 <Link to="/work" style={{ textDecoration: 'none', color: '#000' }} className="proj-demo-link">
                     <figure>
