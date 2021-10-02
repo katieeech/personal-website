@@ -1,26 +1,28 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.2b4a37d5.chunk.css",
-    "main.js": "/personal-website/static/js/main.2a308449.chunk.js",
-    "main.js.map": "/personal-website/static/js/main.2a308449.chunk.js.map",
+    "main.css": "/personal-website/static/css/main.57f5bf00.chunk.css",
+    "main.js": "/personal-website/static/js/main.2b85d18d.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.2b85d18d.chunk.js.map",
     "runtime-main.js": "/personal-website/static/js/runtime-main.706675aa.js",
     "runtime-main.js.map": "/personal-website/static/js/runtime-main.706675aa.js.map",
-    "static/js/2.e9ba851d.chunk.js": "/personal-website/static/js/2.e9ba851d.chunk.js",
-    "static/js/2.e9ba851d.chunk.js.map": "/personal-website/static/js/2.e9ba851d.chunk.js.map",
+    "static/js/2.6b40599a.chunk.js": "/personal-website/static/js/2.6b40599a.chunk.js",
+    "static/js/2.6b40599a.chunk.js.map": "/personal-website/static/js/2.6b40599a.chunk.js.map",
     "static/js/3.217cdfd8.chunk.js": "/personal-website/static/js/3.217cdfd8.chunk.js",
     "static/js/3.217cdfd8.chunk.js.map": "/personal-website/static/js/3.217cdfd8.chunk.js.map",
     "index.html": "/personal-website/index.html",
-    "static/css/main.2b4a37d5.chunk.css.map": "/personal-website/static/css/main.2b4a37d5.chunk.css.map",
-    "static/js/2.e9ba851d.chunk.js.LICENSE.txt": "/personal-website/static/js/2.e9ba851d.chunk.js.LICENSE.txt",
+    "static/css/main.57f5bf00.chunk.css.map": "/personal-website/static/css/main.57f5bf00.chunk.css.map",
+    "static/js/2.6b40599a.chunk.js.LICENSE.txt": "/personal-website/static/js/2.6b40599a.chunk.js.LICENSE.txt",
+    "static/media/IMG_9319.c353053a.jpg": "/personal-website/static/media/IMG_9319.c353053a.jpg",
     "static/media/ODBDThumbnail.e0d5abff.png": "/personal-website/static/media/ODBDThumbnail.e0d5abff.png",
     "static/media/App.css": "/personal-website/static/media/ToolbarBG11.46278122.jpg",
     "static/media/TransparentAtelierThumbnail.4bd5c9f9.png": "/personal-website/static/media/TransparentAtelierThumbnail.4bd5c9f9.png",
-    "static/media/entrance_name.3db63f95.jpg": "/personal-website/static/media/entrance_name.3db63f95.jpg"
+    "static/media/entrance_name.3db63f95.jpg": "/personal-website/static/media/entrance_name.3db63f95.jpg",
+    "static/media/linkedinLogo.6ecd8759.svg": "/personal-website/static/media/linkedinLogo.6ecd8759.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.706675aa.js",
-    "static/js/2.e9ba851d.chunk.js",
-    "static/css/main.2b4a37d5.chunk.css",
-    "static/js/main.2a308449.chunk.js"
+    "static/js/2.6b40599a.chunk.js",
+    "static/css/main.57f5bf00.chunk.css",
+    "static/js/main.2b85d18d.chunk.js"
   ]
 }
