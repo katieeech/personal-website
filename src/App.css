@@ -6,6 +6,24 @@
 }
   /* background: rgba(200,100,100, 0.5); */
 
+
+
+body{
+  padding:0 6em 0 6em;
+}
+
+/* Home */
+  .home-container{
+    /* border:1px solid red; */
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background: white;
+     
+  }
+
 /* Navbar */
 /* toolbar*/
 /* .css-1t29gy6-MuiToolbar-root{ */
@@ -32,13 +50,10 @@ background-position:bottom;
   color: white;
 }
 
-/* .box-navbar{ */
   .box-navbar{
   /* border:red 1px solid; */
 margin-left:auto;
 }
-
-
 
 
 .css-ikb3mf-MuiButtonBase-root-MuiButton-root{
@@ -60,7 +75,7 @@ h3 {
 
 /* Intro */
 .intro-outer-container{
-  padding:0 6em 8em 6em;
+  /* padding:0 6em 0 6em; */
   /* background-image:url("./Images/IntroBG.jpg"); */
 }
 
@@ -71,13 +86,10 @@ h3 {
 
 .intro-div {
   /* border: green 2px solid; */
-  /* margin: 1rem; */
-  /* padding: 0 3.5em; */
   padding-top: 2.5em;
-  /* padding-left: 6em; */
-  display:inline-block;
   margin-bottom:0.5em;
-  /* background:	rgba(248,24,148, 0.7); */
+  /* transition:1.5s ease; */
+  /* display:inline-block; */
 }
 
 
@@ -91,9 +103,11 @@ h3 {
 
 .fed {
   color:#FF0095;
+  transition:0.7s ease;
 }
 .intro-div:hover {
 color:#FF0095 ;
+/* transition:1.5s ease; */
 }
 
 .intro-div:hover .fed{
@@ -103,29 +117,11 @@ color:#FF0095 ;
   font-weight:600;
   background-color:#FF0095 ;
   color:white;
-  transition:0.5s ease;
-
+  /* transition:0.5s ease; */
+  transition:1s ease; 
 }
 
-.intro-div:hover .from-right{
-  background:#fabce0 ;
-  }
 
-
-.home-container{
-  /* display:flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* height:auto;
-  vertical-align: middle;
-  border-style: none; */
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background: white;
-}
 
 .proj-demos-container{
   /* border: red solid 5px; */
@@ -175,9 +171,15 @@ color:#FF0095 ;
   /* background: #FF0095; */
 background-size: 200% 100%;
 background-position:left bottom;
-animation: 3s ease-out 0s 1 slideInFromRight;
+animation: 4s ease-out 0s 1 slideInFromRight;
+transition: 1s ease;
 border-radius:0.3em;
 }
+
+.intro-div:hover + .from-right{
+  background:#fabce0 ;
+  }
+
 
 .proj-demo-link > h3 {
 text-align:left;
@@ -245,3 +247,31 @@ margin-top: 2em ;
 
 
 
+
+
+
+
+.footer{
+  text-align: center;
+  padding-top:7em;
+}
+
+.footer > p {
+  font-family: sans-serif;
+}
+
+.footer > :first-child{
+  font-style: italic;
+}
+
+.copyright{
+  font-size: 0.8rem;
+  /* font-family: sans-serif; */
+}
+
+.logo{
+  display:inline-block;
+  height:1.5em;
+  width:1.5em;
+  margin-right: 1em;
+}

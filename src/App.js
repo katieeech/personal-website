@@ -6,6 +6,7 @@ import Intro from './Component/Intro'
 import About from './Component/About'
 import Work from './Component/Work'
 import Studio from './Component/Studio';
+import Archive from './Component/Archive';
 import { BrowserRouter as Router, Route } from "react-router-dom"
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Route exact path="/about" render={(routerProps) => <About {...routerProps} />} />
       <Route exact path="/work" render={(routerProps) => <Work {...routerProps} />} />
       <Route exact path="/studio" render={(routerProps) => <Studio {...routerProps} />} />
+      <Route exact path="/archive" render={(routerProps) => <Archive {...routerProps} />} />
 
     </Router>
   );

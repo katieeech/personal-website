@@ -115,7 +115,8 @@ export default function PersistentDrawerLeft() {
                     </Typography>
                     <div className="box-navbar">
                         <Button variant="outlined" color="inherit" style={{ margin: '0 0.3em', fontWeight: 'bold' }}
-                            onClick={() => window.open('https://www.linkedin.com/in/katiehchoi/')}>
+                            onClick={() => window.open('mailto:hyewonchoi31@gmail.com')}
+                        >
                             email
                         </Button>
                         <Button variant="outlined" color="inherit" style={{ margin: '0 0.3em', fontWeight: 'bold' }} onClick={() => window.open('https://github.com/katiehyewonchoi')}>
@@ -165,6 +166,13 @@ export default function PersistentDrawerLeft() {
                         {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
                     </IconButton>
                 </DrawerHeader>
+                <List>
+                    <Link to="/intro" style={{ textDecoration: 'none', color: '#000' }}>
+                        <ListItem button key="Intro" onClick={handleDrawerClose} >
+                            <ListItemText primary="Hello" />
+                        </ListItem>
+                    </Link>
+                </List>
                 <Divider />
                 <List>
                     <Link to="/about" style={{ textDecoration: 'none', color: '#000' }} >

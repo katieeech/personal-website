@@ -8,7 +8,7 @@ function Intro() {
     return (
         <div className="intro-outer-container">
             <div className="intro-div">
-                <h1>WELCOME!</h1>
+                <h1>WELCOME !</h1>
                 <h2>
                     I am a <span className="fed">front-end developer</span> based in New York City
                 </h2>
@@ -16,7 +16,7 @@ function Intro() {
             </div>
 
             <div className="from-right"></div>
-            <h3>/Explore My Work</h3>
+            <h3>/Explore <span className="my-work">My Work!</span></h3>
 
             <div className="proj-demos-container">
 

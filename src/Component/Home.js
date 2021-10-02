@@ -11,7 +11,9 @@ function Home() {
                 <img src={entrance_logo} alt="katie.h.choi" className="entrance-logo"></img>
                 {/* </button> */}
             </Link>
+
         </div>
+
     )
 }
 export default Home;

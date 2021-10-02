@@ -1,5 +1,5 @@
 import React from "react"
-
+import Footer from "../Component/Footer"
 function About() {
     return (
         <div>
@@ -9,7 +9,9 @@ function About() {
                 I worked as a statistician in the past and my last research paper was published on blabla
                 When I'm away from my computer, I like traveling, swimming, going to concerts, and taking photos.
             </p>
+            <Footer />
         </div>
+
     )
 }
 export default About;
