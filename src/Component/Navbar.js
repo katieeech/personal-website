@@ -84,15 +84,6 @@ export default function PersistentDrawerLeft() {
         setOpen(false);
     };
 
-    // const theme = createTheme({
-    //     typography: {
-    //         fontFamily: [
-    //             'Montserrat',
-    //             'sans-serif'
-    //         ].join(','),
-    //     }
-    // });
-
 
     return (
         // <MuiThemeProvider theme={theme}>
@@ -109,11 +100,13 @@ export default function PersistentDrawerLeft() {
                     >
                         <MenuIcon />
                     </IconButton>
+                    <p>KATIE.H.CHOI</p>
 
                     <Typography variant="h6" noWrap component="div">
                         {/* Persistent drawer */}
                     </Typography>
-                    <div className="box-navbar">
+                    {/* <div className="box-navbar"> */}
+                    <Box className="box-navbar">
                         <Button variant="outlined" color="inherit" style={{ margin: '0 0.3em', fontWeight: 'bold' }}
                             onClick={() => window.open('mailto:hyewonchoi31@gmail.com')}
                         >
@@ -124,26 +117,11 @@ export default function PersistentDrawerLeft() {
                         </Button>
                         <Button variant="outlined" color="inherit" style={{ margin: '0 0.3em', fontWeight: 'bold' }}
                             onClick={() => window.open('https://www.linkedin.com/in/katiehchoi/')}>
-
                             linkedin
                         </Button>
-                        {/* <IconButton variant="outlined" color="inherit" >
-                            email
-                        </IconButton>
-                        <IconButton variant="outlined" color="inherit" >
-                            github
-                        </IconButton>
-                        <IconButton variant="outlined" color="inherit" >
-                            linkedin
-                        </IconButton> */}
-                    </div>
-                    {/* i added above */}
+                    </Box>
                     <div className="toolbar-bottom"></div>
-
                 </Toolbar>
-                {/* i add below */}
-
-
             </AppBar>
             <Drawer
                 sx={{
@@ -169,7 +147,7 @@ export default function PersistentDrawerLeft() {
                 <List>
                     <Link to="/intro" style={{ textDecoration: 'none', color: '#000' }}>
                         <ListItem button key="Intro" onClick={handleDrawerClose} >
-                            <ListItemText primary="Hello" />
+                            <ListItemText primary="Welcome" />
                         </ListItem>
                     </Link>
                 </List>

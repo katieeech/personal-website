@@ -1,7 +1,11 @@
 import React from "react"
 import Footer from "./Footer"
-import ODBD from "../Images/ODBDThumbnail.png"
-import TA from "../Images/TransparentAtelierThumbnail.png"
+import ODBDThumbnail from "../Images/ODBDThumbnail.png"
+import OSThumbnail from "../Images/OSThumbnail.png";
+// import HEThumbnail from "../Images/HummingEffect.png"
+import TAThumbnail from "../Images/TransparentAtelierThumbnail.png"
+
+
 import { Link } from "react-router-dom"
 
 function Intro() {
@@ -17,12 +21,12 @@ function Intro() {
 
             <div className="from-right"></div>
             <h3>/Explore <span className="my-work">My Work!</span></h3>
-
+            {/* Scroll these up */}
             <div className="proj-demos-container">
 
                 <div className="proj-demo-thumb-container">
                     <Link to="/work" style={{ textDecoration: 'none', color: '#000' }} className="proj-demo-link">
-                        <img src={ODBD} alt="odbd" className="proj-demo-img" />
+                        <img src={ODBDThumbnail} alt="odbd" className="proj-demo-img" />
                         <div className="proj-thumb-middle">
                             <div className="proj-thumb-title">ODBD</div>
                         </div>
@@ -31,37 +35,21 @@ function Intro() {
 
                 <div className="proj-demo-thumb-container">
                     <Link to="/work" style={{ textDecoration: 'none', color: '#000' }} className="proj-demo-link">
-                        <img src={TA} alt="transparent atelier" className="proj-demo-img" />
+                        <img src={OSThumbnail} alt="on-stage" className="proj-demo-img" />
                         <div className="proj-thumb-middle">
-                            <div className="proj-thumb-title">Transparent Atelier</div>
+                            <div className="proj-thumb-title">OnStage</div>
                         </div>
                     </Link>
-
                 </div>
 
                 <div className="proj-demo-thumb-container">
                     <Link to="/work" style={{ textDecoration: 'none', color: '#000' }} className="proj-demo-link">
-                        <img src={ODBD} alt="odbd" className="proj-demo-img" />
+                        <img src={TAThumbnail} alt="transparent atelier" className="proj-demo-img" />
                         <div className="proj-thumb-middle">
-                            <div className="proj-thumb-title">Humming Effect</div>
+                            <div className="proj-thumb-title">Transparent Atelier</div>
                         </div>
                     </Link>
                 </div>
-                {/* 
-                <Link to="/work" style={{ textDecoration: 'none', color: '#000' }} className="proj-demo-link">
-                    <figure>
-                        <img src={HumEff} alt="transparent atelier" className="project-demo-thumbnail" />
-                        <figcaption> HummingEffect
-                            <br></br>
-                            Hum and guess game
-                        </figcaption>
-                    </figure>
-                </Link> */}
-
-                {/* HummingEffect
-                <img src={ODBD} alt="odbd" className="project-demo-thumbnail" />
-                OnStage
-                <img src={ODBD} alt="odbd" className="project-demo-thumbnail" /> */}
             </div>
             <Footer />
         </div >

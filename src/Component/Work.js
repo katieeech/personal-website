@@ -1,26 +1,39 @@
 import React from "react";
 import Footer from "./Footer";
-import ODBD from "../Images/ODBDThumbnail.png";
-import TA from "../Images/TransparentAtelierThumbnail.png";
+import ODBDThumbnail from "../Images/ODBDThumbnail.png";
+import TAThumbnail from "../Images/TransparentAtelierThumbnail.png";
+import HEThumbnail from "../Images/HummingEffect.png";
+import OSThumbnail from "../Images/OSThumbnail.png";
 
-function Work() {
+
+function Work({ history }) {
     return (
-        <div>
-            <div className="project-thumbnail-container">
-                ODBD
-                <p> Music/Podcast streaming app for programmers</p>
+        <div className="work-outer-container">
+            <h1>WORK</h1>
+            <div className="work-outer-div">
+                <div className="work-container">
+                    <div>
+                        <img src={ODBDThumbnail} alt="odbd" className="proj-img"
+                            onClick={() => history.push("/work/odbd")} />
+                    </div>
+                    <div>
+                        <img src={HEThumbnail} alt="humming effect" className="proj-img"
+                            onClick={() => history.push("work/humming-effect")} />
+                    </div>
+                    <div>
+                        <img src={TAThumbnail} alt="transparent atelier" className="proj-img"
+                            onClick={() => history.push("work/transparent-atelier")} />
+                    </div>
 
-                <img src={ODBD} alt="odbd" className="project-thumbnail" />
-                Transparent Atelier
-                <p> Retail app for eyewears</p>
+                    <div>
+                        <img src={OSThumbnail} alt="on stage" className="proj-img"
+                            onClick={() => history.push("work/on-stage")} />
+                    </div>
 
-                <img src={TA} alt="transparent atelier" className="project-thumbnail" />
-                HummingEffect
-                <img src={ODBD} alt="odbd" className="project-thumbnail" />
-                OnStage
-                <img src={ODBD} alt="odbd" className="project-thumbnail" />
+
+                </div>
+                <Footer />
             </div>
-            <Footer />
         </div>
     )
 }

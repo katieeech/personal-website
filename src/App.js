@@ -7,6 +7,11 @@ import About from './Component/About'
 import Work from './Component/Work'
 import Studio from './Component/Studio';
 import Archive from './Component/Archive';
+import ODBD from './Component/ODBD';
+import TransparentAtelier from './Component/TransparentAtelier';
+import HummingEffect from './Component/HummingEffect';
+import OnStage from './Component/OnStage';
+
 import { BrowserRouter as Router, Route } from "react-router-dom"
 
 function App() {
@@ -20,6 +25,10 @@ function App() {
       <Route exact path="/work" render={(routerProps) => <Work {...routerProps} />} />
       <Route exact path="/studio" render={(routerProps) => <Studio {...routerProps} />} />
       <Route exact path="/archive" render={(routerProps) => <Archive {...routerProps} />} />
+      <Route exact path="/work/odbd" render={(routerProps) => <ODBD {...routerProps} />} />
+      <Route exact path="/work/transparent-atelier" render={(routerProps) => <TransparentAtelier {...routerProps} />} />
+      <Route exact path="/work/on-stage" render={(routerProps) => <OnStage {...routerProps} />} />
+      <Route exact path="/work/humming-effect" render={(routerProps) => <HummingEffect {...routerProps} />} />
 
     </Router>
   );
