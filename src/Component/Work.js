@@ -11,7 +11,7 @@ function Work({ history }) {
         <div className="work-outer-container">
             <h1>WORK</h1>
             <div className="work-outer-div">
-                <div className="work-container">
+                <div className="work-inner">
                     <div>
                         <img src={ODBDThumbnail} alt="odbd" className="proj-img"
                             onClick={() => history.push("/work/odbd")} />

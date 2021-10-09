@@ -21,7 +21,7 @@ function Intro() {
 
             <div className="from-right"></div>
             <h3>/Explore <span className="my-work">My Work!</span></h3>
-            {/* Scroll these up */}
+
             <div className="proj-demos-container">
 
                 <div className="proj-demo-thumb-container">

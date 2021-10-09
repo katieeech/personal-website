@@ -11,8 +11,12 @@ function About() {
             {/* <img src={ProfilePic1}></img> */}
             {/* <p>Katie H Choi is a front-end/UX developer</p> */}
             <div className="profile">
+                <div className="profile-right-img-container">
+                    <img src={ProfilePic2} alt="profile"></img>
+                </div>
+
                 <div className="profile-left">
-                    <p>Hi, I'm Katie Hyewon Choi, a front-end developer in New York City.
+                    <p>Hi, I am Katie Hyewon Choi, a front-end developer in New York City.
                         I love building and designing compelling user experiences.
                         My main expertise is in front-end development but UX/UI design has always been my interest as well.
                         I am a fast learner and truly enjoy teaching myself new skills and languages.
@@ -46,16 +50,14 @@ function About() {
                             <li>Languages</li>
                             <li>English, Korean</li>
                         </ul>
-
                     </div>
 
 
                 </div>
 
-                <div className="profile-img-container">
-                    <img src={ProfilePic2} alt="profile"></img>
-                </div>
+
             </div>
+
             <div className="underline-div"></div>
 
 

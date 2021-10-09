@@ -5,7 +5,7 @@ import OSThumbnail from "../Images/OSThumbnail.png";
 
 function OnStage({ history }) {
     return (
-        <div className="odbd-outer-container">
+        <div className="work-detail-outer">
             <button onClick={() => history.push("/work")}>ᐊ Back </button>
             <div className="underline-div"></div>
             <div className="work-detail-container">

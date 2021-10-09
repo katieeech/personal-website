@@ -15,11 +15,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ListItem from '@mui/material/ListItem';
-// import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-// import InboxIcon from '@mui/icons-material/MoveToInbox';
-// import MailIcon from '@mui/icons-material/Mail';
-// import { MuiThemeProvider, createTheme } from '@material-ui/core/styles';
 
 
 
@@ -90,7 +86,9 @@ export default function PersistentDrawerLeft() {
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
             <AppBar position="fixed" open={open} style={{ background: 'white' }} elevation={0}>
-                <Toolbar style={{ color: 'purple', padding: '0.7em 1.3em 1.3em' }}>
+                <Toolbar style={{ color: 'purple' }}>
+                {/* , padding: '0.7em 1.3em 1.3em'  */}
+
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
@@ -100,13 +98,14 @@ export default function PersistentDrawerLeft() {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <p>KATIE.H.CHOI</p>
+                    <h1 className="navbar-title">KATIE H CHOI</h1>
+
 
                     <Typography variant="h6" noWrap component="div">
                         {/* Persistent drawer */}
                     </Typography>
                     {/* <div className="box-navbar"> */}
-                    <Box className="box-navbar">
+                    <Box className="navbar-btn-container">
                         <Button variant="outlined" color="inherit" style={{ margin: '0 0.3em', fontWeight: 'bold' }}
                             onClick={() => window.open('mailto:hyewonchoi31@gmail.com')}
                         >
