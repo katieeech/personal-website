@@ -675,7 +675,8 @@ padding-bottom:2em;
 }
 
 .work-detail-left-div{
-  padding: 1em 1em;
+  min-width: min-content;
+  padding: 0 1em;
 }
 
 .work-detail-left-div img{

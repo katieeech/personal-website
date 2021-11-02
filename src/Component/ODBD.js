@@ -32,7 +32,7 @@ function ODBD({ history }) {
                         </tr>
                     </table>
 
-                    <p> ODBD is a music streaming service app for programmers, which offers digital copyright restricted recorded music from Spotify and various podcasts for developers/engineers. You can listen to different playlists of tracks depending on your current mood. ODBD provides a podcast channel for each user for uploading podcast episodes.</p>
+                    <p> <strong>ODBD</strong> is a music streaming service app for programmers, which offers digital copyright restricted recorded music from Spotify and various podcasts for developers/engineers. You can listen to different playlists of tracks depending on your current mood. ODBD provides a podcast channel for each user for uploading podcast episodes.</p>
                 </div>
             </div>
             <Footer />

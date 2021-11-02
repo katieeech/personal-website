@@ -29,7 +29,7 @@ function HummingEffect({ history }) {
 
                     </table>
 
-                    <p> HummingEffect is a humming game that can be played with at least two players who like music.
+                    <p> <strong>HummingEffect</strong> is a humming game that can be played with at least two players who like music.
                         Players choose decades of songs to hum and a number of rounds to play.
                         First player picks a song from a list of four songs presented and starts humming it.
                         Other players will guess the song and receive points if guessed correctly.
