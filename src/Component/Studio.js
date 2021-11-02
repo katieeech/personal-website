@@ -4,7 +4,7 @@ import Footer from "./Footer"
 function Studio() {
     return (
         <div>
-            STUDIO
+            <h2>Studio</h2>
             -Maintenance Page
             <Footer />
         </div>

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from "react-router-dom"
 import { styled, useTheme } from '@mui/material/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -41,11 +42,22 @@ const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
 );
 const AppBar = styled(MuiAppBar, {
     shouldForwardProp: (prop) => prop !== 'open',
+   
 })(({ theme, open }) => ({
     transition: theme.transitions.create(['margin', 'width'], {
         easing: theme.transitions.easing.sharp,
         duration: theme.transitions.duration.leavingScreen,
     }),
+    // overrides: {
+    //     MuiAppBar: {
+    //       root: {
+    //         backgroundColor: 'black'
+    //       },
+    //       regular: {
+    //           backgroundColor: 'black'
+    //         }
+    //     }
+    //   },
     ...(open && {
         width: `calc(100% - ${drawerWidth}px)`,
         marginLeft: `${drawerWidth}px`,
@@ -65,6 +77,33 @@ const DrawerHeader = styled('div')(({ theme }) => ({
     justifyContent: 'flex-end',
 }));
 
+// Custom code from me
+
+// const barTheme = createTheme({
+
+    // overrides: {
+    //   MuiToolBar: {
+    //     root: {
+    //       backgroundColor: 'black'
+    //     },
+    //     regular: {
+    //         backgroundColor: 'black'
+    //       }
+    //   }
+    // }
+  
+//   });
+
+
+// MuiTab: {
+//     root: {
+//       minWidth: 0,
+//       '@media (min-width: 0px)': {
+//         minWidth: 0
+//       }
+//     }
+//   }
+
 
 export default function PersistentDrawerLeft() {
 
@@ -81,12 +120,34 @@ export default function PersistentDrawerLeft() {
     };
 
 
+    const useStyles = makeStyles(theme => ({
+        toolbar: {
+          color: "white",
+          [theme.breakpoints.down("xs")]: {
+            marginTop: theme.spacing(1),
+            backgroundColor: "purple"
+          },
+          [theme.breakpoints.between("sm", "md")]: {
+            marginTop: theme.spacing(3),
+            backgroundColor: "white"
+          },
+          "@media (min-width: 1280px)": {
+            marginTop: theme.spacing(5),
+            backgroundColor: "white"
+          }
+        }
+    }));
+
+    const classes = useStyles();
+
     return (
         // <MuiThemeProvider theme={theme}>
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
-            <AppBar position="fixed" open={open} style={{ background: 'white' }} elevation={0}>
-                <Toolbar style={{ color: 'purple' }}>
+            <AppBar position="fixed" open={open} style={{ background: 'white' }} elevation={0} >
+                {/* <Toolbar style={{ color: 'purple' }}  > */}
+                <Toolbar style={{ color: 'purple' }} className={classes.toolbar} >
+
                 {/* , padding: '0.7em 1.3em 1.3em'  */}
 
                     <IconButton
@@ -144,9 +205,9 @@ export default function PersistentDrawerLeft() {
                     </IconButton>
                 </DrawerHeader>
                 <List>
-                    <Link to="/intro" style={{ textDecoration: 'none', color: '#000' }}>
+                    <Link to="/" style={{ textDecoration: 'none', color: '#000' }}>
                         <ListItem button key="Intro" onClick={handleDrawerClose} >
-                            <ListItemText primary="Welcome" />
+                            <ListItemText primary="K.C" />
                         </ListItem>
                     </Link>
                 </List>

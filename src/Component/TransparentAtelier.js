@@ -11,7 +11,9 @@ function TransparentAtelier({ history }) {
             <div className="work-detail-container">
                 <div className="work-detail-left-div">
                     <h1>Transparent Atelier</h1>
-                    <h4>2021 • <a href="http:" target="_blank" rel="noopener noreferrer">Demo</a> • <a href="https://github.com/katiehyewonchoi/Transparent-Atelier" target="_blank" rel="noopener noreferrer">GitHub</a></h4>
+                    {/* <h4>2021 • <a href="http:" target="_blank" rel="noopener noreferrer">Demo</a> • <a href="https://github.com/katiehyewonchoi/Transparent-Atelier" target="_blank" rel="noopener noreferrer">GitHub</a></h4> */}
+                    <h4>2021 • <a href="https://github.com/katiehyewonchoi/Transparent-Atelier" target="_blank" rel="noopener noreferrer">GitHub</a></h4>
+
                     <img src={TAThumbnail} alt="project display"></img>
                 </div>
                 <div className="work-detail-right-div">

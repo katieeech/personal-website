@@ -1,7 +1,7 @@
 
 import './App.css';
 import Navbar from './Component/Navbar'
-import Home from './Component/Home'
+// import Home from './Component/Home'
 import Intro from './Component/Intro'
 import About from './Component/About'
 import Work from './Component/Work'
@@ -19,8 +19,8 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <Navbar />
-      <Route exact path="/" render={(routerProps) => <Home {...routerProps} />} />
-      <Route exact path="/intro" render={(routerProps) => <Intro {...routerProps} />} />
+      {/* <Route exact path="/" render={(routerProps) => <Home {...routerProps} />} /> */}
+      <Route exact path="/" render={(routerProps) => <Intro {...routerProps} />} />
       <Route exact path="/about" render={(routerProps) => <About {...routerProps} />} />
       <Route exact path="/work" render={(routerProps) => <Work {...routerProps} />} />
       <Route exact path="/studio" render={(routerProps) => <Studio {...routerProps} />} />

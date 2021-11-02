@@ -24,7 +24,6 @@ function Work({ history }) {
                         <img src={TAThumbnail} alt="transparent atelier" className="proj-img"
                             onClick={() => history.push("work/transparent-atelier")} />
                     </div>
-
                     <div>
                         <img src={OSThumbnail} alt="on stage" className="proj-img"
                             onClick={() => history.push("work/on-stage")} />
