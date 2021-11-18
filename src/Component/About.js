@@ -21,9 +21,11 @@ function About() {
                         My main expertise is in front-end development but UX/UI design has always been my interest as well.
                         I am a fast learner and truly enjoy teaching myself new skills and languages.
                         When I'm away from my computer, I like traveling, running, going to concerts, and taking photos.
+
                     </p>
                     <ul className="edu">
                         <li> Education</li>
+                        <li>Flatiron School - Software Engineering. Full Stack (2021)</li>   
                         <li>Columbia University - MS Biostatistsics (2019)</li>
                         <li>Syracuse University - BA Economics (2016)</li>
                     </ul>
