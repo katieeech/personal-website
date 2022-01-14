@@ -382,6 +382,11 @@ border-radius:50%;
 .edu{
   list-style: none;
   padding:0;
+  background-color: hotpink;
+  border:2px solid black;
+  padding:50px;
+  width:400px;
+  height:300px;
 }
 
 .profile-left > ul > li:nth-child(1),

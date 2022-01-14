@@ -167,11 +167,7 @@ export default function PersistentDrawerLeft() {
                     </Typography>
                     {/* <div className="box-navbar"> */}
                     <Box className="navbar-btn-container">
-                    <Button variant="outlined" color="inherit" style={{ margin: '0 0.3em', fontWeight: 'bold' }}
-                            onClick={() => window.open('https://hyewonchoi.notion.site/hyewonchoi/e741f6e248044b5a90024ab1bee8bd23')}
-                        >
-                            국문이력서
-                        </Button>
+
                         <Button variant="outlined" color="inherit" style={{ margin: '0 0.3em', fontWeight: 'bold' }}
                             onClick={() => window.open('mailto:hyewonchoi31@gmail.com')}
                         >
