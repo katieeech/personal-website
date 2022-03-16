@@ -345,6 +345,10 @@ h3 {
   font-style: italic;
 }
 
+.notion {
+  background-color: rgb(225, 228, 228);
+}
+
 .underline-div {
   text-align: left;
   min-height: 0.1em;

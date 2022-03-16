@@ -45,7 +45,18 @@ function About() {
               Jongmin Kim.{" "}
             </a> */}
           </p>
-          <span>* 국문이력서는 노션에서 보실 수 있습니다</span>
+          <span>
+            * 국문이력서는{" "}
+            <a
+              href="https://hyewonchoi.notion.site/44ac003d3beb4c00b494de8144a69f2c"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="notion"
+            >
+              노션
+            </a>
+            에서 보실 수 있습니다
+          </span>
 
           <ul className="edu">
             <li> Education</li>
