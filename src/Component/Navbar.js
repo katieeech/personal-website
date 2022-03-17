@@ -178,10 +178,18 @@ export default function PersistentDrawerLeft() {
               variant="outlined"
               color="inherit"
               style={{ margin: "0 0.3em", fontWeight: "bold" }}
+              onClick={() => window.open("")}
+            >
+              경력기술서
+            </Button>
+            {/* <Button
+              variant="outlined"
+              color="inherit"
+              style={{ margin: "0 0.3em", fontWeight: "bold" }}
               onClick={() => window.open("mailto:hyewonchoi31@gmail.com")}
             >
               email
-            </Button>
+            </Button> */}
             <Button
               variant="outlined"
               color="inherit"

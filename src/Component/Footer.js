@@ -5,7 +5,7 @@ import git from "../Images/GitHub-Mark-64px.png";
 function Footer() {
   return (
     <div className="footer">
-      <p>I believe in my potential - </p>
+      <p>I believe in my potential - hyewonchoi31@gmail.com </p>
       <a
         href="https://www.linkedin.com/in/katiehchoi/"
         target="_blank"

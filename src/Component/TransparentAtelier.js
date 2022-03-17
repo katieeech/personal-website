@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../Component/Footer";
-import TAThumbnail from "../Images/TransparentAtelierThumbnail.png";
+import TAImage from "../Images/TransparentAtelierImage.png";
 
 function TransparentAtelier({ history }) {
   return (
@@ -30,7 +30,7 @@ function TransparentAtelier({ history }) {
           </h4>
           {/* <h4>2021 • <a href="https://github.com/katiehyewonchoi/Transparent-Atelier" target="_blank" rel="noopener noreferrer">GitHub</a></h4> */}
 
-          <img src={TAThumbnail} alt="project display"></img>
+          <img src={TAImage} alt="project display"></img>
         </div>
         <div className="work-detail-right-div">
           <table>

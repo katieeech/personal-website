@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../Component/Footer";
-import Odbd from "../Images/ODBDThumbnail.png";
+import Odbd from "../Images/ODBDImage.png";
 
 function ODBD({ history }) {
   return (

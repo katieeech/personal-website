@@ -13,11 +13,19 @@ function Intro() {
       <div className="intro-div">
         <h1>WELCOME !</h1>
         <h2>
-          I am a <span className="fed">front-end developer</span> based in Korea
+          I am a <span className="fed">front-end developer</span> based in
+          Korea, currently working at
+          <a
+            href="https://www.insapp.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <em> 29Labs </em>
+          </a>
         </h2>
         <h3>
-          {" "}
-          I build and design visually compelling and user-friendly interfaces
+          안녕하세요. 프론트엔드 개발자 최혜원입니다.
+          {/* I build and design visually compelling and user-friendly interfaces */}
         </h3>
       </div>
 

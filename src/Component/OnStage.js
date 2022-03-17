@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../Component/Footer";
-import OSThumbnail from "../Images/OSThumbnail.png";
+import OSThumbnail from "../Images/OSImage.png";
 
 function OnStage({ history }) {
   return (
