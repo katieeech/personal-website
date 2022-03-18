@@ -178,9 +178,9 @@ export default function PersistentDrawerLeft() {
               variant="outlined"
               color="inherit"
               style={{ margin: "0 0.3em", fontWeight: "bold" }}
-              onClick={() => window.open("")}
+              onClick={() => window.open("https://frontendhyeni.tistory.com/2")}
             >
-              경력기술서
+              포트폴리오
             </Button>
             {/* <Button
               variant="outlined"
