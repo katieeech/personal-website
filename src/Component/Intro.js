@@ -1,9 +1,8 @@
 import React from "react";
 import Footer from "./Footer";
+import INSAThumbnail from "../Images/INSAThumbnail.png";
+import BSThumbnail from "../Images/BS.png";
 import ODBDThumbnail from "../Images/ODBDThumbnail.png";
-import OSThumbnail from "../Images/OSThumbnail.png";
-// import HEThumbnail from "../Images/HummingEffect.png"
-import TAThumbnail from "../Images/TransparentAtelierThumbnail.png";
 
 import { Link } from "react-router-dom";
 
@@ -16,15 +15,17 @@ function Intro() {
           I am a <span className="fed">front-end developer</span> based in
           Korea, currently working at
           <a
-            href="https://www.insapp.io/"
+            href="https://www.beautyselection.co.kr/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <em> 29Labs </em>
+            <span>
+              {" "}
+              <em className="bs"> Beauty Selection </em>
+            </span>
           </a>
         </h2>
         <h3>
-          안녕하세요. 프론트엔드 개발자 최혜원입니다.
           {/* I build and design visually compelling and user-friendly interfaces */}
         </h3>
       </div>
@@ -41,22 +42,9 @@ function Intro() {
             style={{ textDecoration: "none", color: "#000" }}
             className="proj-demo-link"
           >
-            <img src={ODBDThumbnail} alt="odbd" className="proj-demo-img" />
+            <img src={BSThumbnail} alt="on-stage" className="proj-demo-img" />
             <div className="proj-thumb-middle">
-              <div className="proj-thumb-title">ODBD</div>
-            </div>
-          </Link>
-        </div>
-
-        <div className="proj-demo-thumb-container">
-          <Link
-            to="/work"
-            style={{ textDecoration: "none", color: "#000" }}
-            className="proj-demo-link"
-          >
-            <img src={OSThumbnail} alt="on-stage" className="proj-demo-img" />
-            <div className="proj-thumb-middle">
-              <div className="proj-thumb-title">OnStage</div>
+              <div className="proj-thumb-title">BeautySelection</div>
             </div>
           </Link>
         </div>
@@ -68,12 +56,25 @@ function Intro() {
             className="proj-demo-link"
           >
             <img
-              src={TAThumbnail}
+              src={INSAThumbnail}
               alt="transparent atelier"
               className="proj-demo-img"
             />
             <div className="proj-thumb-middle">
-              <div className="proj-thumb-title">Transparent Atelier</div>
+              <div className="proj-thumb-title">INSA</div>
+            </div>
+          </Link>
+        </div>
+
+        <div className="proj-demo-thumb-container">
+          <Link
+            to="/work"
+            style={{ textDecoration: "none", color: "#000" }}
+            className="proj-demo-link"
+          >
+            <img src={ODBDThumbnail} alt="odbd" className="proj-demo-img" />
+            <div className="proj-thumb-middle">
+              <div className="proj-thumb-title">ODBD</div>
             </div>
           </Link>
         </div>

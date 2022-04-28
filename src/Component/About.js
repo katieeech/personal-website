@@ -45,7 +45,7 @@ function About() {
               Jongmin Kim.{" "}
             </a> */}
           </p>
-          <span>
+          {/* <span>
             * 국문이력서는{" "}
             <a
               href="https://hyewonchoi.notion.site/44ac003d3beb4c00b494de8144a69f2c"
@@ -56,14 +56,8 @@ function About() {
               노션
             </a>
             에서 보실 수 있습니다
-          </span>
+          </span> */}
 
-          <ul className="edu">
-            <li> Education</li>
-            <li>Flatiron School - Software Engineering. Full Stack (2021)</li>
-            <li>Columbia University - MS Biostatistsics (2019)</li>
-            <li>Syracuse University - BA Economics (2016)</li>
-          </ul>
           <div className="skills-container">
             <ul className="skills-dev">
               <li>Skills - development</li>
@@ -75,17 +69,23 @@ function About() {
               <li>Skills - design</li>
               <li>Figma</li>
             </ul>
-            <ul className="skills-data">
+            {/* <ul className="skills-data">
               <li>Skills - data analysis</li>
               <li> R, SAS</li>
-            </ul>
+            </ul> */}
             <ul className="skills-learning">
               <li>Skills - currently learning</li>
-              <li>React Native, TypeScript, Advanced Figma</li>
+              <li>UI/UX design, React Native</li>
             </ul>
-            <ul className="skills-lang">
+            {/* <ul className="skills-lang">
               <li>Languages</li>
               <li>English, Korean</li>
+            </ul> */}
+            <ul className="edu">
+              <li> Education</li>
+              <li>Flatiron School - Software Engineering. Full Stack (2021)</li>
+              <li>Columbia University - MS Biostatistsics (2019)</li>
+              <li>Syracuse University - BA Economics (2016)</li>
             </ul>
           </div>
         </div>

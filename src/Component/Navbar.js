@@ -162,7 +162,7 @@ export default function PersistentDrawerLeft() {
           </Typography>
           {/* <div className="box-navbar"> */}
           <Box className="navbar-btn-container">
-            <Button
+            {/* <Button
               variant="outlined"
               color="inherit"
               style={{ margin: "0 0.3em", fontWeight: "bold" }}
@@ -173,14 +173,14 @@ export default function PersistentDrawerLeft() {
               }
             >
               이력서
-            </Button>
+            </Button> */}
             <Button
               variant="outlined"
               color="inherit"
               style={{ margin: "0 0.3em", fontWeight: "bold" }}
               onClick={() => window.open("https://frontendhyeni.tistory.com/2")}
             >
-              포트폴리오
+              Portfolio
             </Button>
             {/* <Button
               variant="outlined"
@@ -271,11 +271,6 @@ export default function PersistentDrawerLeft() {
           <Link to="/studio" style={{ textDecoration: "none", color: "#000" }}>
             <ListItem button key="Studio" onClick={handleDrawerClose}>
               <ListItemText primary="Studio" />
-            </ListItem>
-          </Link>
-          <Link to="/archive" style={{ textDecoration: "none", color: "#000" }}>
-            <ListItem button key="Archive" onClick={handleDrawerClose}>
-              <ListItemText primary="Archive" />
             </ListItem>
           </Link>
         </List>
